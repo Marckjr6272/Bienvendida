@@ -1,0 +1,122 @@
+/* --- ESTILOS GENERALES --- */
+body {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    background-color: #f3f5ef;
+    margin: 0;
+    padding: 20px;
+}
+
+/* --- ESTRUCTURA --- */
+#container {
+    width: 90%;
+    margin: 0 auto;
+    background-color: white;
+    border: 2px solid #556B2F;
+    overflow: hidden;
+}
+
+/* --- BANNER E IMAGEN --- */
+#banner {
+    background-color: #556B2F;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; 
+}
+
+/* Estilos para el nuevo contenedor figure */
+.banner-figure {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-banner {
+    height: 120px;
+    width: auto;
+    border-radius: 10px;
+    background-color: white;
+    padding: 5px;
+}
+
+/* Estilo para el texto debajo de la imagen */
+figcaption {
+    font-size: 12px;
+    margin-top: 5px;
+    font-style: italic;
+    opacity: 0.9;
+}
+
+#nav {
+    background-color: #e1e8d5;
+    float: left;
+    width: 20%;
+    min-height: 500px; 
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+#content {
+    background-color: #ffffff;
+    float: right;
+    width: 80%;
+    min-height: 500px;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#footer {
+    clear: both;
+    background-color: #556B2F;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    line-height: 1.6;
+}
+
+/* --- DETALLES --- */
+h1 { margin: 0; }
+h2 { color: #6B8E23; margin-top: 20px; }
+p { color: #333; font-size: 16px; }
+
+#footer p { color: white; } 
+
+button {
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #6B8E23;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover { background-color: #556B2F; }
+
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #ffffff;
+    width: 90%;
+}
+
+th, td {
+    border: 1px solid #6B8E23;
+    padding: 10px 15px;
+}
+
+th { background-color: #6B8E23; color: white; }
+
+caption {
+    caption-side: top;
+    font-size: 18px;
+    font-weight: bold;
+    color: #556B2F;
+    margin-bottom: 10px;
+}
