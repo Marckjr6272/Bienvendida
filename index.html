@@ -3,119 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <title>Desarrollo de aplicaciones WEB</title>
-
-    <style>
-        body {
-            font-family: "Comic Sans MS", "Comic Sans", cursive;
-            text-align: center;
-            background-color: #f3f5ef;
-            padding-top: 50px;
-        }
-
-        h1 {
-            color: #556B2F;
-        }
-
-        h2 {
-            color: #6B8E23;
-            margin-top: 40px;
-        }
-
-        p {
-            color: #333;
-            font-size: 16px;
-        }
-
-        button {
-            padding: 12px 20px;
-            font-size: 16px;
-            cursor: pointer;
-            background-color: #6B8E23;
-            color: white;
-            border: none;
-            border-radius: 5px;
-        }
-
-        button:hover {
-            background-color: #556B2F;
-        }
-
-        table {
-            margin: 0 auto;
-            border-collapse: collapse;
-            margin-top: 20px;
-            background-color: #ffffff;
-        }
-
-        th, td {
-            border: 1px solid #6B8E23;
-            padding: 10px 15px;
-        }
-
-        th {
-            background-color: #6B8E23;
-            color: white;
-        }
-
-        caption {
-            caption-side: top;
-            font-size: 18px;
-            font-weight: bold;
-            color: #556B2F;
-            margin-bottom: 10px;
-        }
-    </style>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
 
-    <h1>Desarrollo de aplicaciones WEB</h1>
+    <div id="container">
 
-    <h2>Integrantes del equipo</h2>
-    <p>
-        Miguel Alejandro Reyes Ramos<br>
-        Raul Valente Trinidad<br>
-        López Huerta Gerardo Abimael<br>
-        Santiago Méndez Yair<br>
-        Marcos Domínguez Barrientos
-    </p>
+        <div id="banner">
+            <figure class="banner-figure">
+                <img src="banner-logo.png" alt="Logo de tecnologías web" class="img-banner">
+                <figcaption>Tecnologías Web 2026</figcaption>
+            </figure>
+            <h1>Desarrollo de aplicaciones WEB</h1>
+        </div>
 
-    <br>
+        <div id="nav">
+            <h3>Menú</h3>
+            <a href="#">Inicio</a><br><br>
+            <a href="#">Horario</a><br><br>
+        </div>
 
-    <button onclick="mostrarBienvenida()">Bienvenida</button>
+        <div id="content">
+            <h2>Bienvenida</h2>
+            <p>
+                Hola a todos. Aquí encontrarán la información relacionada con nuestra materia.
+            </p>
 
-    <h2>Horario</h2>
+            <button onclick="mostrarBienvenida()">Mensaje de Bienvenida</button>
 
-    <table>
-        <caption>HORAS DE CLASE</caption>
-        <tr>
-            <th>Día</th>
-            <th>Horario</th>
-            <th>Grupo</th>
-            <th>Aula</th>
-            <th>Observaciones</th>
-        </tr>
-        <tr>
-            <td>Lunes</td>
-            <td>9 - 10</td>
-            <td>1CCO3</td>
-            <td>104</td>
-            <td>Asesorías</td>
-        </tr>
-        <tr>
-            <td>Miércoles</td>
-            <td>9 - 11</td>
-            <td>1CCO3</td>
-            <td>104</td>
-            <td>-</td>
-        </tr>
-        <tr>
-            <td>Viernes</td>
-            <td>9 - 11</td>
-            <td>1CCO3</td>
-            <td>101</td>
-            <td>-</td>
-        </tr>
-    </table>
+            <h2>Horario de Clases</h2>
+            <table>
+                <caption>SEMESTRE 2026</caption>
+                <tr>
+                    <th>Día</th>
+                    <th>Horario</th>
+                    <th>Grupo</th>
+                    <th>Aula</th>
+                    <th>Observaciones</th>
+                </tr>
+                <tr>
+                    <td>Lunes</td>
+                    <td>9 - 10</td>
+                    <td>1CCO3</td>
+                    <td>104</td>
+                    <td>Asesorías</td>
+                </tr>
+                <tr>
+                    <td>Miércoles</td>
+                    <td>9 - 11</td>
+                    <td>1CCO3</td>
+                    <td>104</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>Viernes</td>
+                    <td>9 - 11</td>
+                    <td>1CCO3</td>
+                    <td>101</td>
+                    <td>-</td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="footer">
+            <p style="font-weight: bold; margin-bottom: 5px;">Integrantes del Equipo:</p>
+            <p style="font-size: 14px; margin: 0;">
+                Miguel Alejandro Reyes Ramos | Raul Valente Trinidad | López Huerta Gerardo Abimael<br>
+                Santiago Méndez Yair | Marcos Domínguez Barrientos
+            </p>
+        </div>
+
+    </div>
 
     <script>
         function mostrarBienvenida() {
@@ -125,6 +83,3 @@
 
 </body>
 </html>
-
-
-
